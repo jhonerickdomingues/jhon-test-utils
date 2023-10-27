@@ -1,27 +1,45 @@
-# React + TypeScript + Vite
+# Utils
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lib de Utils para a loja de produtos. Nela fornecemos algumas funcionalidades que serão usados.
 
-Currently, two official plugins are available:
+**lib de utils:** [lib npm](https://www.npmjs.com/package/jhon-test-utils)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalação via NPM
 
-## Expanding the ESLint configuration
+Instale as dependencias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+  npm add jhon-test-utils
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Como usar no projeto
+
+```bash
+  import { useTranslation, ProductService, ProductType } from 'jhon-test-utils'
+  ---
+  const { t } = useTranslation()
+```
+
+## rodar via github
+
+Clone o repositorio
+
+```bash
+  git clone https://github.com/jhonerickdomingues/jhon-test-utils.git
+```
+
+Instale as dependencias
+
+```bash
+   npm install
+```
+
+Rode o storybook
+
+```bash
+  npm run storybook
+```
+
+## Exemplos:
+
+- [Aplicação Front online](http://jhon-test-app-products.jhonerick.me)
